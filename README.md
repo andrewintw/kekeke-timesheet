@@ -2,6 +2,27 @@
 
 License: [Beerware](https://zh.wikipedia.org/wiki/%E5%95%A4%E9%85%92%E8%BB%9F%E9%AB%94)
 
+## Requestment
+
+### shell
+
+This script only run on bash cannot not working on dash. 
+
+You can use specific shell to run my script, like: `bash ./gen_timesheet2.sh` or use the following steps to change default shell to bash.
+
+	$ sudo dpkg-reconfigure dash
+	select <no>
+
+
+### locale
+
+The script only run on POSIX or C locale. Before you run the script, please change locale to POSIX or C.
+
+	$ export LC_ALL=C
+	or
+	$ export LC_ALL=POSIX
+
+
 ## HOW TO USE
 
 1. clone the utils
@@ -25,7 +46,7 @@ License: [Beerware](https://zh.wikipedia.org/wiki/%E5%95%A4%E9%85%92%E8%BB%9F%E9
 
 6. click "Import-2" to import the .xlsx file we creted
 
-Warning: 
+Warning:
 
 	'ONLY ONE' data field will be generated in the timesheet.
 	Because I am lazy to improve it :-p
