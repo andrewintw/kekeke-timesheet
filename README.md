@@ -5,15 +5,18 @@ License: [Beerware](https://zh.wikipedia.org/wiki/%E5%95%A4%E9%85%92%E8%BB%9F%E9
 ## HOW TO USE
 
 1. clone the utils
+
 		git clone https://github.com/andrewintw/kekeke-timesheet.git
 		cd kekeke-timesheet/
 
 2. syntax
+
 		$ ./gen_timesheet2.sh [the month you want]
 		ex: $ ./gen_timesheet2.sh 4    # use April
 		ex: $ ./gen_timesheet2.sh      # use current month
 
 3. it will generate a .xlsx file.
+
 		ex: timesheet-4.xlsx           # '-4' means for April
 
 4. login to Time System
