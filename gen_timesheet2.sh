@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # No need to modify
 MONTH=`echo $1 |  sed -e 's/[^[:digit:]]//g'`
