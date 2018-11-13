@@ -14,15 +14,6 @@ You can use specific shell to run my script, like: `bash ./gen_timesheet2.sh` or
 	select <no>
 
 
-### locale
-
-The script only run on POSIX or C locale. Before you run the script, please change locale to POSIX or C.
-
-	$ export LC_ALL=C
-	or
-	$ export LC_ALL=POSIX
-
-
 ## HOW TO USE
 
 1. clone the utils
