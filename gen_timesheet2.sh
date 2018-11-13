@@ -10,10 +10,10 @@ exe_bin="csv2xlsx.bin"
 YEAR=`date +%Y`
 
 # Change for your timesheet
-project_name="WLRGFM-100"
+project_name="WLRRTMS-104"
 task_name=""
 task_item="development"
-bu="SD5"
+bu="BG1_SD1"
 
 init_env () {
 	if [ "$MONTH" = "" ]; then
@@ -51,7 +51,7 @@ EOF
 
 list_working_days () {
 	local mm=$MONTH
-	cal -N -h $mm $YEAR | grep -vE "^Sa|^Su|^ |^$" | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n
+	cal -NM -h $mm $YEAR | sed -n '2,6p' | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n
 }
 
 fmt_month () {
