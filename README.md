@@ -14,7 +14,7 @@ You can use specific shell to run my script, like: `bash ./gen_timesheet2.sh` or
 	select <no>
 
 
-## HOW TO USE
+## HOW TO USE - gen_timesheet2.sh
 
 1. clone the utils
 
