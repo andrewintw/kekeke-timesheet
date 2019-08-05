@@ -1,5 +1,9 @@
 #! /bin/bash
 
+# Usage:
+#       $ ./gen_worksign.sh         # generate records for the current month
+#       $ ./gen_worksign.sh [1-12]  # generate for a specified month
+
 # No need to modify
 MONTH=`echo $1 |  sed -e 's/[^[:digit:]]//g'`
 TBheader="工號,申請人,工作日期,原上班時段,簽到時間,簽退時間,簽到IP,簽退IP,備註,"
@@ -11,11 +15,12 @@ YEAR=`date +%Y`
 signLoc="總公司"
 
 
-# Change for your timesheet
+# Change for your info
 userID="108xxx"
 fullName="發大財"
 loginName='korea.fish'
 loginPass='password'
+
 
 parseInt() {
 	printf "%d\n" \'$1
@@ -150,16 +155,16 @@ gen_csv () {
 EOF
 
 	cat $csvfile
-
 	return 0
 }
 
 do_done () {
 	cat << EOF
- `ls -l ${xlsxfile}.xlsx`
 
  The upload steps
 ------------------
+ 0. before running the script, you need to change variable in code: "# Change for your info"
+
  1. open ${xlsxfile}."xlsx" and save as ${xlsxfile}."xls" (.xlsx is NOT working)
 
  2. open the following URL in web browser
