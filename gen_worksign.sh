@@ -16,7 +16,7 @@ signLoc="10.6.1.244"
 
 
 # Change for your info
-userID=""
+userID='108xxx'
 fullName="發大財 (Korea Fish)"
 loginName='korea.fish'
 loginPass='password'
