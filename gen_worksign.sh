@@ -12,7 +12,7 @@ csvfile="${filename}.csv"
 xlsxfile=""
 exe_bin="csv2xlsx.bin"
 YEAR=`date +%Y`
-signLoc="總公司"
+signLoc="10.6.1.244"
 
 
 # Change for your info
