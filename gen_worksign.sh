@@ -89,7 +89,7 @@ EOF
 
 list_working_days () {
 	local mm=$MONTH
-	cal -NM -h $mm $YEAR | sed -n '2,6p' | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n
+	ncal -M -h $mm $YEAR | sed -n '2,6p' | sed "s/[[:alpha:]]//g" | fmt -w 1 | sort -n
 }
 
 fmt_month () {
